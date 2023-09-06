@@ -1,14 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
+import Button from 'react-bootstrap/Button';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <h1>Hello, World!</h1>
-      </div>
-    );
-  }
+function App() {
+  return (
+    <div className="App">
+      <Button variant="primary">Primary</Button>
+    </div>
+  );
 }
 
 export default App;
