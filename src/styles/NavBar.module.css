@@ -1,4 +1,12 @@
-.NavBar {
+.navbar {
     background-color: #ffffff;
     border: 1px solid #dadadf;
+  }
+  
+.navLink {
+    padding: 5px;
+  }
+  
+.active i {
+    color: #2142b2;
   }
