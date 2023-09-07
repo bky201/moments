@@ -1,6 +1,9 @@
 {
   "name": "moments",
   "version": "0.1.0",
+  "engines": {
+    "node": "18.17.1"
+  },
   "private": true,
   "dependencies": {
     "bootstrap": "^4.6.0",
