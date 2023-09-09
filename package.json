@@ -23,6 +23,7 @@
     "client": "cd client && npm start"
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.22.15",
     "@types/react-router-dom": "^5.3.3"
   },
   "browserslist": {
