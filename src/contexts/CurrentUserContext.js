@@ -71,7 +71,7 @@ export const CurrentUserProvider = ({ children }) => {
           // Handle token refresh failure here
           if (error.response?.status === 401) {
             // Redirect to the signin page or perform other actions
-            history.push("/signin");
+            history.push("/");
           }
         }
         return config;
