@@ -16,10 +16,12 @@ import { useCurrentUser } from "../../contexts/CurrentUserContext";
 import InfiniteScroll from "react-infinite-scroll-component";
 import Asset from "../../components/Asset";
 import { fetchMoreData } from "../../utils/utils";
+import { useCurrentUser } from "../../contexts/CurrentUserContext";
 
 function PostPage() {
   const { id } = useParams();
   const [post, setPost] = useState({ results: [] });
+  const currentUser = useCurrentUser();
 
   const currentUser = useCurrentUser();
   const profile_image = currentUser?.profile_image;
@@ -40,7 +42,7 @@ function PostPage() {
     };
 
     handleMount();
-  }, [id]);
+  }, [filter, query, pathname, currentUser]);
 
   return (
     <Row className="h-100">
