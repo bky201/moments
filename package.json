@@ -25,7 +25,7 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "client": "cd client && npm start",
-    "heroku-prebuild": "npm install -g serve",
+    "heroku-prebuild": "npm install -g serve"
   },
   "devDependencies": {
     "@types/react-router-dom": "^5.3.3"
