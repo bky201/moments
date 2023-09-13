@@ -27,6 +27,7 @@
     "client": "cd client && npm start",
     "heroku-prebuild": "npm install -g serve"
   },
+  "proxy": "http://localhost:3000",
   "devDependencies": {
     "@types/react-router-dom": "^5.3.3"
   },
