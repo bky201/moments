@@ -116,12 +116,12 @@ function ProfilePage() {
       <hr />
       <p className="text-center">{profile?.owner}'s posts</p>
       <hr />
-      {profilePosts.results.length ? (
+      {profilePosts.results?.length ? (
         <InfiniteScroll
           children={profilePosts.results.map((post) => (
             <Post key={post.id} {...post} setPosts={setProfilePosts} />
           ))}
-          dataLength={profilePosts.results.length}
+          dataLength={profilePosts.results?.length}
           loader={<Asset spinner />}
           hasMore={!!profilePosts.next}
           next={() => fetchMoreData(profilePosts, setProfilePosts)}
